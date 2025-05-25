@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectAllProducts } from "../features/products/productSlice.jsx";
+//import { selectAllProducts } from "../features/products/productSlice.jsx";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cart/cartSlice";
 

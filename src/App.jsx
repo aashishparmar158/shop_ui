@@ -10,10 +10,19 @@ import ProductDetails from './pages/productDetails.jsx'
 import Categories  from "./pages/categories.jsx";
 import Contact  from "./pages/contact.jsx";
 import About from "./pages/about.jsx";
+import AdminLogin from "./pages/adminLogin.jsx";
+import AdminProtectedRoute from "./routes/adminProtectedRoute.jsx";
+import AdminDashboard from "./pages/adminDashboard.jsx";
+//import StatsOverview from "./pages/admin/StatsOverview";
+import ProductManager from "./pages/admin/ProductManager";
+import UserManager from "./pages/admin/UserManager";
+import CategoryManager from "./pages/admin/CategoryManager";
+
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 import { Routes,Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+
 
 
 function App() {
@@ -67,6 +76,13 @@ function App() {
             <Route path="/categories" element={<Categories />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            {/* Admin Layout with nested routes */}
+            
+            <Route path="/admin/products" element={<ProductManager />} />
+            <Route path="/admin/users" element={<UserManager />} />
+            <Route path="/admin/categories" element={<CategoryManager />} />
+            <Route path="/admin-login" element={<AdminLogin />} />
+            <Route path="/admin" element={<AdminProtectedRoute><AdminDashboard /></AdminProtectedRoute>}/>
           </Routes>
            <Footer />
          </div>
