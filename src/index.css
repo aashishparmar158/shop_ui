@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+
+
+    .font-satisfy-regular {
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+      .font-playfair-display {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .font-semibold{
+        font-family: "Montserrat", 'sans-serif';
+        font-weight: 600;
+        font-style: normal;
+
+      }
+
+      .font-normal{
+        font-family: "Montserrat", 'sans-serif';
+        font-weight: 500;
+        font-style: normal;
+
+      }
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      
